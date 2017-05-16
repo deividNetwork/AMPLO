@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@import url("fonts.css");
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+header {
+    background-image: url("../img/bg/header-home.jpg");
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+header:after {
+    content: "";
+    background-image: url(../img/bg/header-home-polygon.png);
+    position: absolute;
+    width: 100%;
+    height: 285px;
+    bottom: -70px;
+    left: 0;
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header .top-header {
+}
+
+header .top-header:before {
+    content: "";
+    width: 100%;
+    height: 9px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: rgba(127, 63, 152, 0.6);
+}
+
+header .top-header .menu {
+    margin-top: 20px;
+}
+
+header .top-header .menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+header .top-header .menu ul li {
+    display: inline-block;
+}
+
+header .top-header .menu ul li a {
+    font-size: 1.000em;
+    text-transform: uppercase;
+    display: block;
+    color: #FFF;
+    padding: 15px 40px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header .top-header .menu ul li a:hover {
+    background-color: #7f3f98;
+    transform: skewX(-30deg);
+}
+
+header .top-header .menu ul li a:hover span {
+    transform: skewX(30deg);
+    display: inline-block;
+}
+
+header .middle-header {
+    padding: 185px 0 250px;
+    position: relative;
+    z-index: 100;
+}
+
+header .middle-header h1 {
+    font-size: 2.571em;
+    color: #FFF;
+    margin: 0 0 15px;
+}
+
+header .middle-header span {
+    font-size: 1.714em;
+    color: #FFF;
+    margin-bottom: 15px;
+    display: block;
+}
+
+section.giving-day {
+    background-color: #38345f;
+    padding: 150px 0 200px;
+}
+
+section.giving-day img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+section.giving-day h2 {
+    text-transform: uppercase;
+    font-size: 1.286em;
+    color: #FFF;
+    margin: 0 0 5px;
+}
+
+section.giving-day p.info {
+    font-size: 1.143em;
+    color: #FFF;
+    margin: 30px 0;
+}
+
+section.giving-day p.caption {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.143em;
+    color: #fff8b9;
+    margin: 0 0 15px;
+}
+
+section.institutional-size {
+    padding: 250px 0 400px;
+    position: relative;
+}
+
+section.institutional-size:before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg/institutional-size.png);
+    background-size: cover;
+    background-position: top center;
+}
+
+section.institutional-size h2 {
+    font-size: 3.214em;
+    color: #7f3f98;
+    margin: 0;
+}
+
+section.institutional-size p.info {
+    font-size: 1.143em;
+    color: #525252;
+    margin: 45px 0;
+}
+
+section.overview {
+    position: relative;
+}
+
+section.overview:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -260px;
+    background-image: url(../img/bg/overview-polygon.png);
+    width: 484px;
+    height: 400px;
+}
+
+section.overview h2 {
+    font-size: 4.286em;
+    color: #7f3f98;
+    margin: 160px 0 145px 15px;
+}
+
+section.overview p.info {
+    font-size: 1.143em;
+    color: #575757;
+    margin: 45px 0 45px 15px;
+}
+
+section.features {
+    padding: 150px 0 100px;
+}
+
+section.features .item {
+    display: inline-block;
+    width: calc(18% - 3px);
+    vertical-align: top;
+    text-align: center;
+    padding: 0 15px;
+}
+
+section.features .item:nth-child(1) {
+    width: calc(25% - 3px);
+}
+
+section.features .item img {
+    max-width: 100%;
+}
+
+section.features .item h5 {
+    font-size: 1.286em;
+    color: #7f3f98;
+    padding: 20px 0 15px;
+}
+
+section.features .item p {
+    font-size: 1.143em;
+    color: #585858;
+}
+
+footer {
+}
+
+/* CUSTOM ELEMENTS */
+a.btn-call-to-action {
+    position: relative;
+    background-color: #FFF;
+    display: inline-block;
+    color: #7f3f98;
+    padding: 15px 40px;
+    font-size: 1.286em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: normal;
+    transform: skewX(-30deg);
+}
+
+a.btn-call-to-action.bg-alpha {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+a.btn-call-to-action.bg-purple {
+    background-color: #7f3f98;
+    color: #FFF;
+}
+
+a.btn-call-to-action.border-gray {
+    font-size: 2.143em;
+    border: 2px solid #e7e6e7;
+    color: #686868;
+    padding: 10px 40px;
+}
+
+a.btn-call-to-action span {
+    transform: skewX(30deg);
+    display: inline-block;
+    font-size: inherit;
+    color: inherit;
+    margin: 0;
+}
