@@ -1,0 +1,197 @@
+@media screen and (min-width: 768px) {
+    header .top-header .menu .menu-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .top-header .menu {
+        margin: 0;
+        position: relative;
+        z-index: 200;
+    }
+
+    header .top-header .menu .menu-mobile {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5em;
+        display: block;
+        color: #FFF;
+    }
+
+    header .top-header .menu ul {
+        position: absolute;
+        top: 55px;
+        right: 15px;
+        padding: 0;
+        width: calc(60%);
+        max-width: 250px;
+        text-align: left;
+        background-color: rgba(127, 63, 152, 0.6);
+        display: none;
+    }
+
+    header .top-header .menu .menu-mobile.open + ul {
+        display: block;
+    }
+
+    header .top-header .menu ul li {
+        display: block;
+    }
+
+    header .top-header .menu ul li a {
+        transform: initial !important;
+        padding: 10px 15px;
+        background: transparent !important;
+    }
+
+    header .top-header .menu ul li a:hover {
+        background-color: #FFF !important;
+        color: #7f3f98;
+    }
+
+    header .top-header .menu ul li a span {
+        transform: initial !important;
+    }
+
+    body.home header:after {
+        bottom: -30px;
+        height: 100px;
+    }
+
+    body.home header .middle-header {
+        padding: 160px 0;
+    }
+
+    section.giving-day {
+        padding: 60px 0;
+    }
+
+    section.giving-day a.btn-call-to-action {
+        margin-bottom: 30px;
+    }
+
+    section.giving-day video {
+        width: 100%;
+    }
+
+    section.institutional-size {
+        padding: 60px 0;
+    }
+
+    section.institutional-size br {
+        display: none;
+    }
+
+    section.institutional-size:before {
+        display: none;
+    }
+
+    section.overview {
+        padding: 30px 0 0;
+    }
+
+    section.overview img.img-responsive {
+        display: none;
+    }
+
+    section.overview:before {
+        display: none;
+    }
+
+    section.overview h2 {
+        margin: 0 0 40px;
+    }
+
+    section.overview p.info {
+        margin: 40px 0;
+    }
+
+    section.overview a.btn-call-to-action {
+        margin: 0 auto;
+        display: block;
+        max-width: 270px;
+        text-align: center;
+    }
+
+    section.features {
+        padding: 60px 0;
+    }
+
+    section.features .item {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+
+    section.modules {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    section.modules:after {
+        display: none;
+    }
+
+    section.modules .btn-call-to-action {
+        margin: 0 0 40px;
+    }
+
+    section.modules img {
+        position: static !important;
+        margin: 0 auto 30px !important;
+        display: block;
+    }
+
+    section.modules .items {
+        left: 0;
+    }
+
+    section.modules .items .item {
+        text-align: center;
+    }
+
+    section.institutions:before {
+        height: 80px;
+        top: -80px;
+    }
+
+    section.institutions h2 {
+        margin: 0 0 40px;
+    }
+
+    section.institutions .item {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+
+    section.athletics {
+        padding: 120px 0 80px;
+    }
+
+    footer {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    footer:before {
+        height: 120px;
+        top: -40px;
+    }
+
+    footer ul {
+        display: inline-block;
+    }
+
+    footer img.logo {
+        margin-top: 40px;
+    }
+
+    footer h4 {
+        margin: 40px 0;
+    }
+
+    footer p.copyright {
+        margin: 30px 0 0;
+    }
+}
