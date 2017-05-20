@@ -16,14 +16,21 @@ a:hover {
 }
 
 header {
-    background-image: url("../img/bg/header-home.jpg");
     background-position: top center;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
 }
 
-header:after {
+body.home header {
+    background-image: url("../img/bg/header-home.jpg");
+}
+
+body.platform header {
+    background-image: url("../img/bg/header-platform.jpg");
+}
+
+body.home header:after {
     content: "";
     background-image: url(../img/bg/header-home-polygon.png);
     position: absolute;
@@ -84,9 +91,13 @@ header .top-header .menu ul li a:hover span {
 }
 
 header .middle-header {
-    padding: 185px 0 250px;
+    padding: 100px 0 200px;
     position: relative;
     z-index: 100;
+}
+
+body.home header .middle-header {
+    padding: 185px 0 250px;
 }
 
 header .middle-header h1 {
@@ -395,6 +406,263 @@ section.athletics a.btn-call-to-action {
     margin-top: 55px;
 }
 
+section.complete-suite {
+    background-color: #40234c;
+    background-image: url(../img/bg/bg-complete-suite.png);
+    background-position: center left;
+    background-size: calc(100% - 30%);
+    background-repeat: no-repeat;
+    padding: 180px 250px;
+}
+
+section.complete-suite h2 {
+    font-size: 2.571em;
+    color: #FFF;
+    margin: 0 0 25px;
+}
+
+section.complete-suite p.info {
+    font-size: 1.714em;
+    color: #FFF;
+    margin: 0;
+}
+
+section.one-powerfull {
+    padding: 80px 0 0;
+    margin-bottom: 250px;
+    position: relative;
+}
+
+section.one-powerfull:before {
+    content: "";
+    background-image: url(../img/bg/onepowerful-polygon-bottom-left.png);
+    background-size: contain;
+    width: 411px;
+    height: 327px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: -170px;
+    left: -80px;
+}
+
+section.one-powerfull:after {
+    content: "";
+    background-image: url(../img/bg/onepowerful-polygon-top-right.png);
+    background-size: contain;
+    width: 281px;
+    height: 224px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: -80px;
+    right: -50px;
+}
+
+section.one-powerfull h2 {
+    font-size: 2.571em;
+    color: #7f3f98;
+    margin: 160px 0 20px;
+}
+
+section.one-powerfull p.info {
+    color: #5d5d5d;
+    font-size: 1.714em;
+    margin: 0;
+}
+
+section.one-powerfull .items {
+    margin-left: -120px;
+}
+
+section.one-powerfull .items .item {
+    text-align: center;
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+section.one-powerfull .items .item.main {
+    top: 290px;
+    z-index: 100;
+}
+
+section.one-powerfull .items .item.item-1 {
+    left: 110px;
+}
+
+section.one-powerfull .items .item.item-2 {
+    left: 235px;
+    top: 185px;
+}
+
+section.one-powerfull .items .item.item-3 {
+    top: 140px;
+    width: 40%;
+    left: -40px;
+}
+
+section.one-powerfull .items .item.item-4 {
+    top: 280px;
+    left: 270px;
+}
+
+section.one-powerfull .items .item img {
+    margin-bottom: 15px;
+}
+
+section.one-powerfull .items .item h5 {
+    font-size: 1.286em;
+    color: #7f3f98;
+    margin: 0 0 15px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+section.one-powerfull .items .item p {
+    color: #626262;
+    font-size: 1.143em;
+    margin: 0;
+}
+
+section.platform-common-list {
+}
+
+section.platform-common-list img {
+    margin-bottom: 20px;
+}
+
+section.platform-common-list h2 {
+    color: #7f3f98;
+    font-size: 2.571em;
+    margin: 0 0 20px;
+}
+
+section.platform-common-list h4 {
+    color: #8d8d8d;
+    font-size: 1.714em;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+section.platform-common-list ul {
+    margin: 0 0 50px;
+    padding: 0;
+    list-style: none;
+}
+
+section.platform-common-list ul li {
+    color: #545454;
+    font-size: 1.143em;
+    margin: 0 0 10px;
+}
+
+section.platform-common-list ul li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #959595;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+section.platform-common-list p {
+}
+
+section.platform-common-list .items {
+    text-align: center;
+}
+
+section.platform-common-list .items .item {
+    margin-bottom: 30px;
+}
+
+section.platform-common-list .items .item:last-child {
+    margin-bottom: 0;
+}
+
+section.platform-common-list .items .item img {
+    margin-bottom: 30px;
+}
+
+section.platform-common-list .items .item p {
+    margin: 0;
+    color: #8d8d8d;
+    font-size: 1.143em;
+}
+
+section.giving-day-platform {
+    padding: 90px 0 190px;
+    background-image: url(../img/bg/giving-day-platform.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+
+section.giving-day-platform .items {
+    margin-top: 15px;
+}
+
+section.unite {
+    background-image: url(../img/bg/bg-unite.jpg);
+    background-position: top center;
+    background-size: cover;
+    margin-top: -100px;
+    padding-top: 25px;
+}
+
+section.unite .to-down {
+    margin-top: 80px;
+}
+
+section.sprout {
+    background-image: url(../img/bg/bg-sprout.png);
+    background-position: top center;
+    background-size: cover;
+    padding: 90px 0 130px;
+    position: relative;
+    z-index: 100;
+    margin-top: -250px;
+}
+
+section.sprout img.img-home {
+    width: calc(100% + 20%);
+    margin-top: 60px;
+}
+
+section.platform-bottom {
+    background-image: url(../img/bg/bg-platform-bottom.png);
+    background-size: cover;
+    background-position: top center;
+    padding: 320px 0 250px;
+    margin-top: -250px;
+    position: relative;
+    z-index: 100;
+}
+
+section.platform-bottom h2 {
+    font-size: 2.571em;
+    color: #FFF;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+
+section.platform-bottom p.info {
+    font-size: 1.143em;
+    color: #FFF;
+    margin: 0;
+}
+
+section.platform-bottom a.btn-call-to-action {
+    margin-top: 30px;
+}
+
 footer {
     background-color: #252525;
     padding: 170px 0 100px;
@@ -412,6 +680,7 @@ footer:before {
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: 200;
 }
 
 footer ul {
