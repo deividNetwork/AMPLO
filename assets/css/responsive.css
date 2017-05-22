@@ -141,6 +141,7 @@
         position: static !important;
         margin: 0 auto 30px !important;
         display: block;
+        max-width: 100%;
     }
 
     section.modules .items {
