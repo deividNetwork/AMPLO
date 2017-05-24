@@ -34,6 +34,10 @@ body.athletic header {
     background-image: url("../img/bg/header-athletic.jpg");
 }
 
+body.institution header {
+    background-image: url("../img/bg/header-institution.jpg");
+}
+
 body.home header:after {
     content: "";
     background-image: url(../img/bg/header-home-polygon.png);
@@ -108,6 +112,7 @@ header .middle-header h1 {
     font-size: 2.571em;
     color: #FFF;
     margin: 0 0 15px;
+    text-transform: uppercase;
 }
 
 header .middle-header span {
@@ -533,6 +538,12 @@ section.one-powerfull .items .item p {
 section.platform-common-list {
 }
 
+section.platform-common-list p.info {
+    color: #4b4b4b;
+    font-size: 1.143em;
+    margin-bottom: 20px;
+}
+
 section.platform-common-list img {
     margin-bottom: 20px;
 }
@@ -541,6 +552,7 @@ section.platform-common-list h2 {
     color: #7f3f98;
     font-size: 2.571em;
     margin: 0 0 20px;
+    text-transform: uppercase;
 }
 
 section.platform-common-list h4 {
@@ -558,7 +570,7 @@ section.platform-common-list ul {
 
 section.platform-common-list ul li {
     color: #545454;
-    font-size: 1.143em;
+    font-size: 1.286em;
     margin: 0 0 10px;
 }
 
@@ -574,7 +586,23 @@ section.platform-common-list ul li:before {
     display: inline-block;
 }
 
-section.platform-common-list p {
+section.platform-common-list ul li ul {
+    margin: 0 0 0 40px;
+}
+
+section.platform-common-list ul li ul li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 1.143em;
+}
+
+section.platform-common-list ul li ul li:before {
+    content: "";
+    background-color: transparent;
+    border: 1px solid #959595;
+    position: absolute;
+    top: 12px;
+    left: 0;
 }
 
 section.platform-common-list .items {
@@ -827,10 +855,21 @@ section.large-and-small {
     z-index: 100;
 }
 
+section.large-and-small.institution {
+    padding: 170px 0 220px;
+    margin-top: 0;
+    background-image: url(../img/bg/bg-large-and-small-institution.jpg);
+    background-size: cover;
+}
+
 section.large-and-small p.caption {
     margin: 0;
     font-size: 1.714em;
     color: #FFF;
+}
+
+section.large-and-small.institution p.caption {
+    text-transform: uppercase;
 }
 
 section.large-and-small .title {
@@ -856,6 +895,12 @@ section.large-and-small .title span.right {
 section.large-and-small .title span.icon {
     font-size: 2.5em;
     margin: 0 20px;
+}
+
+section.large-and-small p.info {
+    font-size: 1.714em;
+    color: #FFF;
+    margin: 60px 0 0;
 }
 
 section.integration {
@@ -909,6 +954,173 @@ section.success-stories img {
     max-width: calc(100% / 5 - 100px);
     margin: 0 45px 60px;
     vertical-align: middle;
+}
+
+section.carrousel {
+    background-image: url(../img/bg/bg-carousel.jpg);
+    background-size: 130%;
+    background-position: top center;
+    background-repeat: repeat-y;
+    padding: 50px 0 200px;
+}
+
+section.carrousel .col-md-12 {
+    width: calc(100% + 250px);
+}
+
+section.carrousel .owl-nav {
+    display: block !important;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: -63px;
+    z-index: 200;
+}
+
+section.carrousel .owl-nav .owl-prev, section.carrousel .owl-nav .owl-next {
+    width: 23px;
+    height: 43px;
+    color: transparent;
+}
+
+section.carrousel .owl-nav .owl-prev {
+    background-image: url(../img/icon/carrousel-prev.png);
+    margin-bottom: 35px;
+}
+
+section.carrousel .owl-nav .owl-next {
+    background-image: url(../img/icon/carrousel-next.png);
+}
+
+section.carrousel .item {
+    opacity: 0.3;
+    transition: opacity 0.1s linear 0s;
+}
+
+section.carrousel .enabled .item {
+    opacity: 1;
+}
+
+section.carrousel .item p.caption {
+    font-size: 1.000em;
+    color: #FFF;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+
+section.carrousel .item h5 {
+    font-size: 1.571em;
+    color: #FFF;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+section.carrousel .item .box-image {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+}
+
+section.carrousel .item .box-image:after {
+    content: "";
+    background-image: url(../img/icon/carrousel-play.png);
+    width: 51px;
+    height: 51px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    display: block;
+    z-index: 100;
+}
+
+section.carrousel .item .box-image img {
+}
+
+section.carrousel .item .info {
+    color: #333333;
+    font-size: 1.143em;
+    background-color: #FFF;
+    padding: 40px 20px;
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+}
+
+section.carrousel .item .info {
+}
+
+section.carrousel .item .info .brand {
+    max-height: 80px;
+    display: inline-block;
+    width: initial;
+    margin-bottom: 20px;
+}
+
+section.carrousel .item .info p.goals {
+    color: #9b9b9b;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    line-height: normal;
+}
+
+section.carrousel .item .info p.goals span.caption {
+    font-size: 0.8em;
+}
+
+section.carrousel .item .info p.goals span.value {
+    font-size: 2em;
+    display: block;
+}
+
+section.carrousel .item .info .left, section.carrousel .item .info .right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+section.carrousel .item .info .left {
+    width: calc(55% - 3px);
+}
+
+section.carrousel .item .info .right {
+    text-align: center;
+    width: calc(45% - 3px);
+}
+
+section.carrousel .item .info .bottom {
+    margin-top: 30px;
+}
+
+section.central-advancement {
+    background-image: url(../img/bg/bg-central-advancement.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0 70px;
+    z-index: 100;
+    position: relative;
+    margin-top: -120px;
+}
+
+section.alumni-and-constituent {
+    background-image: url(../img/bg/bg-alumni-and-constituent.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0 60px;
+    z-index: 100;
+    position: relative;
+}
+
+section.marketing-and-communication {
+    background-image: url(../img/bg/bg-marketing-and-communication.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0 210px;
+    z-index: 200;
+    position: relative;
 }
 
 footer {
@@ -1018,6 +1230,13 @@ a.btn-call-to-action.border-gray {
     border: 2px solid #e7e6e7;
     color: #686868;
     padding: 10px 40px;
+}
+
+a.btn-call-to-action.border-blue {
+    border: 2px solid #0a4d8b;
+    white-space: nowrap;
+    padding: 10px 28px;
+    font-size: 1.036em;
 }
 
 a.btn-call-to-action.text-gray {
